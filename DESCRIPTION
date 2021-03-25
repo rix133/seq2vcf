@@ -1,0 +1,21 @@
+Package: seq2vcf
+Type: Package
+Title: Convert Aligned Reads to Variant Call Format 
+Version: 0.1.0
+Authors@R: c(person("Richard", "Meitern", , "richard.meitern@ut.ee", role =  c("aut", "cre"), comment = c(ORCID = "0000-0002-2600-3002")))
+Maintainer: Richard Meitern <richard.meitern@ut.ee>
+Description: Converts aligned RNA DNA or protein sequences to a Variant Call 
+  Format (.vcf) file for variant calling using Ensembl VEP (Variant Effect 
+  Predictor). 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: GNU make
+RoxygenNote: 7.1.1
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+Imports: 
+     zlibbioc
