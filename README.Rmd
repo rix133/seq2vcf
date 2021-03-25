@@ -28,7 +28,16 @@ The goal of seq2vcf is to convert aligned RNA DNA or protein sequences to a Vari
 
 ## Installation
 
-Currently you can install it using:
+You likely need to install *zlibbioc* beforehand:
+
+``` r
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("zlibbioc")
+```
+
+Then you can install **seq2vcf** using:
 
 ``` r
 #NB! Requires RTools (see below)
@@ -36,11 +45,7 @@ install.packages("remotes")
 remotes::install_github("rix133/seq2vcf")
 ```
 
-You may need to install *zlibbioc* beforehand:
 
-``` r
-install.packages("zlibbioc")
-```
 
 However, to build under windows you need to have RTools40 installed. Also you may need to install the *curl* and *pcre* library for Rtools.
 

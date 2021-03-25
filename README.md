@@ -19,18 +19,21 @@ This package is work in progress and may change in any time.
 
 ## Installation
 
-Currently you can install it using:
+You likely need to install *zlibbioc* beforehand:
+
+``` r
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("zlibbioc")
+```
+
+Then you can install **seq2vcf** using:
 
 ``` r
 #NB! Requires RTools (see below)
 install.packages("remotes")
 remotes::install_github("rix133/seq2vcf")
-```
-
-You may need to install *zlibbioc* beforehand:
-
-``` r
-install.packages("zlibbioc")
 ```
 
 However, to build under windows you need to have RTools40 installed.
