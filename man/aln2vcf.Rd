@@ -4,7 +4,7 @@
 \alias{aln2vcf}
 \title{Convert .fasta File to .vcf File}
 \usage{
-aln2vcf(fname, chromosome = 1, start_at = 0)
+aln2vcf(fname, chromosome = 1, start_at = 0, verbose = T)
 }
 \arguments{
 \item{fname}{- path to the converted file}
@@ -12,6 +12,8 @@ aln2vcf(fname, chromosome = 1, start_at = 0)
 \item{chromosome}{- the chromosome where the fasta sequence lies}
 
 \item{start_at}{- the first nucleotide position on the chromosome}
+
+\item{verbose}{- print command result info}
 }
 \value{
 if assigned returns the data.frame of the resulting vcf file.

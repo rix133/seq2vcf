@@ -11,7 +11,6 @@
 #' @return an invisible data frame of the vcf
 #' @export
 #'
-#' @examples
 fix_vcf<-function(fname, chrom, start, conversionCheck = TRUE){
 
   mycbVEP <- read.table(fname, header = T, sep = "\t", comment.char = "",
