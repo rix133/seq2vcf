@@ -1,7 +1,7 @@
 Package: seq2vcf
 Type: Package
 Title: Convert Aligned Reads to Variant Call Format 
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(person("Richard", "Meitern", , "richard.meitern@ut.ee", role =  c("aut", "cre"), comment = c(ORCID = "0000-0002-2600-3002")))
 Maintainer: Richard Meitern <richard.meitern@ut.ee>
 Description: Converts aligned RNA DNA or protein sequences to a Variant Call 
@@ -17,5 +17,6 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Language: en-US
-Imports: 
-     zlibbioc
+Depends: R (>= 3.5.0), Biostrings (>= 2.58.0), parallel
+Imports: zlibbioc, S4Vectors, IRanges, XVector
+LinkingTo: Biostrings, S4Vectors, IRanges, XVector

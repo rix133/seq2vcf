@@ -13,7 +13,7 @@
 #' @return if assigned returns the data.frame of the resulting vcf file.
 #' @export
 #'
-aln2vcf<-function(fname, chromosome=1, start_at=0, verbose = T){
+aln2vcf<-function(fname, chromosome=1, start_at=1, verbose = T){
   res_file <- alignment_file_to_snp_sites_file(in_file = fname,
                                    vcf = 1L,
                                    out_file = fname)

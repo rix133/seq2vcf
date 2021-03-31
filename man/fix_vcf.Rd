@@ -4,19 +4,22 @@
 \alias{fix_vcf}
 \title{Fix Variant Call File from SNP Align}
 \usage{
-fix_vcf(fname, chrom, start, conversionCheck = TRUE)
+fix_vcf(fname, chrom, start, conversionCheck = TRUE, overwriteInput = TRUE)
 }
 \arguments{
-\item{fname}{input and output filename}
+\item{fname}{file name  for input and output (only if overwrite enabled)}
 
 \item{chrom}{chromosome value to be used}
 
 \item{start}{start position of the sequence on chromosome}
 
 \item{conversionCheck}{should the file be checked for previous conversion}
+
+\item{overwriteInput}{(boolean) should the input file be overwritten
+with the fixed values}
 }
 \value{
-an invisible data frame of the vcf
+an invisible data frame of the fixed vcf file data
 }
 \description{
 Adds proper chromosome name and start position to the vcf exported by
